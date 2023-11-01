@@ -15,7 +15,6 @@ conn = Faraday.new(
 Bot.command(:url) do |event, text|
     if text =~ URI::DEFAULT_PARSER.make_regexp
         res = conn.get('url', { url: text })
-        # event.message.delete_all_reactions
         event.respond("#{event.author.mention} #{res.body}")
         event.message.delete
     else
