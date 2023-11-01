@@ -26,4 +26,4 @@ end
 Bot.run(true)
 
 puts "Bot started"
-puts "Invite URL: #{Bot.invite_url}"
+puts "Invite URL: https://discord.com/api/oauth2/authorize?client_id=1168807061514100846&permissions=8&scope=bot"
